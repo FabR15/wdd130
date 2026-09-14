@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 :root {
     --cor-principal: #454540;
     --cor-secundaria: #fdbb3e;
@@ -23,6 +29,7 @@ main {
 }
 
 main img {
+    float: right;
     width: var(--largura-imagem);
     height: auto;
     border: 1px solid var(--cor-borda-azul);
@@ -32,18 +39,20 @@ main img {
 
 aside {
     width: 20rem;
-    margin: 1rem;
-    border: 1px solid rgb(0 0 0 / 0.2);
-    padding: 1rem;
-    background-color: var(--cor-fundo-secundario);
-    color: var(--cor-texto);
     text-align: center;
     font-family: var(--fonte-principal);
+    position: relative;
 }
 
 aside img {
     width: 200px;
     height: auto;
+}
+
+aside h2 {
+    position: absolute;
+    top: 24px;
+    left: 120px;
 }
 
 nav {
@@ -82,4 +91,17 @@ footer {
     border-top: 1px solid var(--cor-borda);
     text-align: center;
     font-family: var(--fonte-principal);
+}
+
+/* Seletores de Classe */
+.caixa {
+    margin: 1rem;
+    border: 1px solid rgb(0 0 0 / 10%);
+    padding: 1rem;
+    background-color: var(--cor-secundaria);
+    color: var(--cor-texto);
+}
+
+.identacao {
+    padding-left: 2rem;
 }
