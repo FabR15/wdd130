@@ -1,26 +1,44 @@
+:root {
+    --cor-principal: #454540;
+    --cor-secundaria: #fdbb3e;
+    --cor-azul: #2f6fa5;
+    --cor-fundo: #fff;
+    --cor-fundo-secundario: #eee;
+    --cor-texto: #333;
+    --cor-branco: #fff;
+
+    --fonte-principal: Arial, sans-serif;
+
+    --largura-imagem: 150px;
+    --padding-imagem: 2px;
+
+    --cor-borda: #454540;
+    --cor-borda-azul: #2f6fa5;
+    --cor-sombra: gray;
+    --sombra-imagem: 0 0 30px gray;
+}
+
 main {
     max-width: 840px;
 }
 
 main img {
-    width: 150px;
+    width: var(--largura-imagem);
     height: auto;
-    border: 1px solid steelblue;
-    padding: 2px;
-    box-shadow: 0 0 30px gray;
-
+    border: 1px solid var(--cor-borda-azul);
+    padding: var(--padding-imagem);
+    box-shadow: var(--sombra-imagem);
 }
 
 aside {
     width: 20rem;
     margin: 1rem;
     border: 1px solid rgb(0 0 0 / 0.2);
-    /* 🥇 */
     padding: 1rem;
-    background-color: #eee;
-    color: #333;
+    background-color: var(--cor-fundo-secundario);
+    color: var(--cor-texto);
     text-align: center;
-
+    font-family: var(--fonte-principal);
 }
 
 aside img {
@@ -29,34 +47,39 @@ aside img {
 }
 
 nav {
-    background-color: darkblue;
+    background-color: var(--cor-principal);
     padding: 10px;
+    font-family: var(--fonte-principal);
 }
 
 nav a {
-    color: white;
+    color: var(--cor-secundaria);
     display: block;
     padding: 20px;
 }
 
 h1 {
-    color: darkblue;
+    color: var(--cor-texto);
+    font-family: var(--fonte-principal);
 }
 
 img {
-    width: 150px;
+    width: var(--largura-imagem);
     height: auto;
-    border: 1px solid black;
-    padding: 2px;
-    box-shadow: 0 0 30px gray;
+    border: 1px solid var(--cor-borda);
+    padding: var(--padding-imagem);
+    box-shadow: var(--sombra-imagem);
 }
 
 p {
     padding: 0px;
+    font-family: var(--fonte-principal);
+    color: var(--cor-texto);
 }
 
 footer {
     margin-top: 15px;
-    border-top: 1px solid #000;
+    border-top: 1px solid var(--cor-borda);
     text-align: center;
+    font-family: var(--fonte-principal);
 }
