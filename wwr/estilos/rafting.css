@@ -14,17 +14,22 @@
 }
 
 body {
-    font-family: var( -- fonte-body);
-    color: var( -- cor-destaque1);
+    font-family: var(--fonte-body);
+    color: var(--cor-destaque1);
 }
 
 .hero {
     position: relative;
 }
 
+.hero h1 {
+    position: absolute;
+}
+
 .hero img {
 display: block;
 width: 100%;
+float: right;
 height: auto;
 }
 
@@ -34,8 +39,8 @@ header, main, footer {
 }
 
 h1, h2 {
-    font-family: var( -- fonte-titulo);
-    color: var( -- cor-primaria);
+    font-family: var(--fonte-titulo);
+    color: var(--cor-primaria);
     text-align: center;
 }
 
@@ -43,7 +48,11 @@ article {
     position: absolute;
 }
 
-.hero article img {
+
+
+.hero article {
+    
+    position: absolute;
     float: right;
     width: 125px;
 }
@@ -54,7 +63,7 @@ h1 {
     padding: 16px;
     text-align: center;
     opacity: 0.7;
-    background-color: var( -- cor-destaque1);
+    background-color: var(--cor-destaque1);
     color: #fff; 
 }
 
