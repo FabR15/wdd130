@@ -1,7 +1,13 @@
 * {
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
+    padding: 3px 2px 5px 3px;
+}
+
+header,
+footer,
+.grid {
+    max-width: 840px;
+    margin: 0 auto;
 }
 
 :root {
@@ -24,10 +30,6 @@
     --sombra-imagem: 0 0 30px gray;
 }
 
-main {
-    max-width: 840px;
-}
-
 main img {
     float: right;
     width: var(--largura-imagem);
@@ -37,11 +39,26 @@ main img {
     box-shadow: var(--sombra-imagem);
 }
 
+div {
+    unicode-bidi: isolate;
+}
+
+.grid {
+    display: grid;
+    align-items: center;
+}
+
+main {
+    grid-column: 2/3;
+    margin: 1rem;
+}
+
 aside {
     width: 20rem;
-    text-align: center;
-    font-family: var(--fonte-principal);
     position: relative;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    font-family: var(--fonte-principal);
 }
 
 aside img {
@@ -51,25 +68,31 @@ aside img {
 
 aside h2 {
     position: absolute;
-    top: 24px;
-    left: 120px;
+    top: 3px;
+    left: 72px;
 }
 
 nav {
     background-color: var(--cor-principal);
-    padding: 10px;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
     font-family: var(--fonte-principal);
 }
 
 nav a {
-    color: var(--cor-secundaria);
     display: block;
-    padding: 20px;
+    padding: 0.5rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--cor-branco);
 }
 
 h1 {
     color: var(--cor-texto);
-    font-family: var(--fonte-principal);
+    border-bottom: 1px solid var(--cor-borda);
 }
 
 img {

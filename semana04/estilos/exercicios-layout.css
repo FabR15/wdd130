@@ -14,6 +14,7 @@ div {
     margin: 1rem;
     border: 1px dashed;
     padding: 1rem;
+    justify-content: center;
 }
 
 .one {
@@ -23,17 +24,23 @@ div {
 
 .flex {
     background-color: #aba;
-    /* escreva declaracoes aqui */
+    justify-content: center;
+    text-align: center;
 
 }
 
 .grid {
     background-color: #abb;
+    justify-content: center;
+    text-align: center;
     /* escreva declaracoes aqui */
 
 }
 
 .container2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
     /* escreva declaracoes aqui */
 
 }
@@ -44,11 +51,14 @@ div {
 }
 
 .container3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     /* escreva declaracoes aqui */
 
 }
 
 .colunas-3 {
+    grid-column: 1/4;
     /* escreva declaracoes aqui */
 
 }
