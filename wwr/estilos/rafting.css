@@ -30,7 +30,7 @@ header {
     grid-template-columns: 200px 1fr;
     align-items: center;
     padding: 20px;
-    background-color: var(--cor-destaque1);
+    background-color: #494747;
 }
 
 header img {
