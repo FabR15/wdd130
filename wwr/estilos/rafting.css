@@ -18,6 +18,7 @@ body {
     color: var(--cor-destaque1);
 }
 
+/* HEADER */
 header,
 main,
 footer {
@@ -25,7 +26,6 @@ footer {
     margin: 0 auto;
 }
 
-/* CABEÇALHO */
 header {
     display: grid;
     grid-template-columns: 200px 1fr;
@@ -39,7 +39,6 @@ header > img {
     height: auto;
 }
 
-/* MENU */
 header nav {
     display: flex;
     justify-content: space-around;
@@ -49,7 +48,7 @@ header nav {
 }
 
 header nav a {
-    color: var(--cor-secundaria);
+    color: var(--cor-destaque2);
     text-decoration: none;
     padding: 15px 20px;
 }
@@ -180,18 +179,18 @@ footer p {
     margin: 0;
 }
 
-footer .redes-sociais {
+footer .socialmedia {
     display: flex;
     gap: 15px;
     margin: 0;
     padding: 0;
 }
 
-footer .redes-sociais a {
+footer .socialmedia a {
     text-decoration: none;
 }
 
-footer .redes-sociais img {
+footer .socialmedia img {
     width: 40px;
     height: 40px;
     object-fit: contain;
