@@ -5,10 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Fale Conosco | Companhia de Rafting</title>
-
+    <title>Contato | Splash Rafting</title>
     <meta name="description"
-        content="Entre em contato com a Companhia de Rafting para tirar dúvidas, fazer reservas ou enviar sugestões.">
+        content="Entre em contato com a Splash Rafting para dúvidas, reservas e sugestões.">
 
     <link rel="stylesheet" href="estilos/rafting.css">
 </head>
@@ -16,7 +15,7 @@
 <body>
 
     <header>
-        <img src="imagens/logo.png" alt="Logo Splash Rafting">
+        <img src="imagens/logo.png"  alt="Splash Rafting">
 
         <nav>
             <a href="index.html">Página Inicial</a>
@@ -42,12 +41,9 @@
             <div class="map">
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d18373.159155444875!2d-46.40464549080478!3d-23.971167557800776!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1790877769287!5m2!1spt-BR!2sbr"
-                    width="600"
-                    height="450"
-                    allowfullscreen
+                    title="Localização da Companhia de Rafting"
                     loading="lazy"
-                    referrerpolicy="strict-origin-when-cross-origin"
-                    title="Localização da Companhia de Rafting">
+                    allowfullscreen>
                 </iframe>
             </div>
 
@@ -71,28 +67,18 @@
 
                 <p>Propósito da Mensagem</p>
 
-                <label>
-                    <input
-                        type="radio"
-                        name="purpose"
-                        value="general"
-                        required>
+                <label for="general">
+                    <input type="radio" id="general" name="purpose" value="general">
                     Consulta Geral
                 </label>
 
-                <label>
-                    <input
-                        type="radio"
-                        name="purpose"
-                        value="reservation">
+                <label for="reservation">
+                    <input type="radio" id="reservation" name="purpose" value="reservation">
                     Pergunta sobre Reserva
                 </label>
 
-                <label>
-                    <input
-                        type="radio"
-                        name="purpose"
-                        value="suggestion">
+               <label for="suggestion">
+                    <input type="radio" id="suggestion" name="purpose" value="suggestion">
                     Sugestão de Site
                 </label>
 
@@ -104,18 +90,12 @@
                     placeholder="Digite aqui"
                     required></textarea>
 
-                <label>
-                    <input
-                        type="checkbox"
-                        name="newsletter">
-
+                <label for="newsletter">
+                    <input type="checkbox" id="newsletter" name="newsletter">
                     Quero receber a newsletter mensal
                 </label>
 
-                <button type="submit">
-                    Entrar em Contato!
-                </button>
-
+                <button type="submit">Entrar em Contato!</button>
             </form>
 
         </section>
@@ -128,8 +108,6 @@
                 <img
                     src="imagens/funcionario1.jpg"
                     alt="Funcionário da companhia de rafting">
-
-                <p>Nome do Funcionário</p>
                 <p>Guia de Rafting</p>
             </div>
 
@@ -137,8 +115,6 @@
                 <img
                     src="imagens/funcionario2.jpg"
                     alt="Funcionário da companhia de rafting">
-
-                <p>Nome do Funcionário</p>
                 <p>Gerente de Reservas</p>
             </div>
 
@@ -146,8 +122,6 @@
                 <img
                     src="imagens/funcionario3.jpg"
                     alt="Funcionário da companhia de rafting">
-
-                <p>Nome do Funcionário</p>
                 <p>Atendente</p>
             </div>
 
@@ -156,22 +130,22 @@
     </main>
 
     <footer>
-        <p>©️ 2026 Splash Rafting | Fabio Rocha</p>
+    <p>© 2026 Splash Rafting | Fabio Rocha</p>
 
-        <nav class="socialmedia">
-            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
-                <img src="imagens/facebook.png" alt="Ícone do Facebook">
-            </a>
+    <nav class="redessociais">
+        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+            <img src="imagens/facebook.png" alt="Ícone do Facebook">
+        </a>
 
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
-                <img src="imagens/linkedin.svg" alt="Ícone do LinkedIn">
-            </a>
+        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+            <img src="imagens/linkedin.svg" alt="Ícone do LinkedIn">
+        </a>
 
-            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
-                <img src="imagens/instagram.png" alt="Ícone do Instagram">
-            </a>
-        </nav>
-    </footer>
+        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+            <img src="imagens/instagram.png" alt="Ícone do Instagram">
+        </a>
+    </nav>
+</footer>
 
 </body>
 
