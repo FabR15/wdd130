@@ -184,19 +184,127 @@ footer p {
     margin: 0;
 }
 
-footer .redes-sociais {
+footer .socialmedia {
     display: flex;
     gap: 15px;
     margin: 0;
     padding: 0;
 }
 
-footer .redes-sociais a {
+footer .socialmedia a {
     text-decoration: none;
 }
 
-footer .redes-sociais img {
+footer .socialmedia img {
     width: 40px;
     height: 40px;
     object-fit: contain;
+}
+
+.hero {
+    position: relative;
+    min-height: 450px;
+    overflow: hidden;
+}
+
+.hero > img {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+}
+
+.hero h1 {
+    position: absolute;
+    top: 25px;
+    left: 0;
+    right: 0;
+    color: var(--cor-secundaria);
+    font-size: 38px;
+    margin: 0;
+}
+
+.hero article {
+    position: absolute;
+    top: 95px;
+    left: 10%;
+    right: 10%;
+    display: grid;
+    grid-template-columns: 1fr 180px;
+    gap: 30px;
+    align-items: center;
+    padding: 25px;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.hero article p {
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    line-height: 1.4;
+}
+
+.hero article img {
+    grid-column: 2;
+    grid-row: 1;
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+}
+
+.historia {
+    display: grid;
+    grid-template-columns: 1fr 300px 1fr;
+    align-items: center;
+    gap: 25px;
+    padding: 25px;
+    background-color: #eee;
+}
+
+.historia h2 {
+    grid-column: 1 / 4;
+    margin: 0;
+    padding: 10px;
+}
+
+.historia p {
+    margin: 0;
+    padding: 10px;
+    font-size: 18px;
+}
+
+.historia img {
+    width: 300px;
+    height: 180px;
+    object-fit: cover;
+}
+
+.aventuras {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 25px;
+}
+
+.aventuras h2 {
+    width: 100%;
+    margin: 0 0 25px;
+}
+
+.aventuras figure {
+    width: 18%;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.aventuras figure img {
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+}
+
+.aventuras figcaption {
+    margin-top: 8px;
+    font-size: 16px;
 }
